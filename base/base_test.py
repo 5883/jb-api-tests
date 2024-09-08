@@ -1,18 +1,17 @@
 import pytest
 
 from clients.api_сlient import APIClient
+from utils.token_manager import TokenManager
 
 
 class BaseTest:
+
     @pytest.fixture(scope="class", autouse=True)
     def setup(self):
         """Настройка перед выполнением тестов."""
-        self.auth_token = self.get_auth_token()
+        login = TokenManager.login_request("+77013132777", "ASDasd1234!")
+        self.auth_token = TokenManager.get_client_access_token()
         self.api_client = APIClient(auth_header=self.auth_token)
-
-    def get_auth_token(self):
-        """Метод для получения токена авторизации (можно переопределить)."""
-        return "your_auth_token"  # Это можно заменить запросом на авторизацию
 
     def send_post_request(self, endpoint, data):
         """Вспомогательный метод для отправки POST запроса."""
