@@ -2,8 +2,10 @@ import requests
 import json
 import os
 import jsonschema
+from assert_utils import AssertUtils
 
 from configs import base_url
+from utils.json_utils import JsonUtils
 
 
 class TokenManager:
@@ -88,13 +90,8 @@ class TokenManager:
         request_body = {"phone_number": phone_number}
 
         response = requests.post(url, json=request_body, headers=headers)
-        assert response.status_code == 200
-
+        AssertUtils.assert_status_code(response, 200)
         schema = TokenManager.load_schema("createDeviceTokenResponse.json")
         jsonschema.validate(response.json(), schema)
 
         TokenManager.signature = response.json()["signature"]
-
-    @staticmethod
-    def login_request(phone_number, password):
-        access_token = TokenManager.get_client_access_token
