@@ -14,6 +14,8 @@ class BaseTest:
     api_client = None
     companyID = None
     assertUtils = None
+    responseBody = None
+    payment_id = None
 
     @pytest.fixture(scope='class', autouse=True)
     def setup(self, request):

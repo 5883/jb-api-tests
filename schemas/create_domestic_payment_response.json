@@ -1,0 +1,429 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "companyId": {
+      "type": "string"
+    },
+    "company": {
+      "type": "null"
+    },
+    "requestId": {
+      "type": "null"
+    },
+    "status": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "message": {
+          "type": "null"
+        },
+        "state": {
+          "type": "null"
+        },
+        "timestamp": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "message",
+        "state",
+        "timestamp"
+      ]
+    },
+    "category": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "paymentRecipient": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "iinOrBin": {
+          "type": "string"
+        },
+        "kbe": {
+          "type": "object",
+          "properties": {
+            "code": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "code",
+            "name"
+          ]
+        },
+        "recipientAccount": {
+          "type": "object",
+          "properties": {
+            "iban": {
+              "type": "string"
+            },
+            "bankName": {
+              "type": "string"
+            },
+            "bic": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "iban",
+            "bankName",
+            "bic"
+          ]
+        },
+        "countryCode": {
+          "type": "null"
+        },
+        "country": {
+          "type": "null"
+        },
+        "cityName": {
+          "type": "null"
+        },
+        "routingTransitAccount": {
+          "type": "null"
+        },
+        "routingTransitBankName": {
+          "type": "null"
+        },
+        "kpp": {
+          "type": "null"
+        },
+        "address": {
+          "type": "null"
+        },
+        "factualRecipient": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "name",
+        "iinOrBin",
+        "kbe",
+        "recipientAccount",
+        "countryCode",
+        "country",
+        "cityName",
+        "routingTransitAccount",
+        "routingTransitBankName",
+        "kpp",
+        "address",
+        "factualRecipient"
+      ]
+    },
+    "details": {
+      "type": "object",
+      "properties": {
+        "createDate": {
+          "type": "string"
+        },
+        "issueDate": {
+          "type": "null"
+        },
+        "valueDate": {
+          "type": "null"
+        },
+        "knp": {
+          "type": "object",
+          "properties": {
+            "code": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "code",
+            "name"
+          ]
+        },
+        "kbk": {
+          "type": "null"
+        },
+        "description": {
+          "type": "string"
+        },
+        "paymentAmount": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "number"
+            },
+            "currency": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "amount",
+            "currency"
+          ]
+        },
+        "commission": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "integer"
+            },
+            "currency": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "amount",
+            "currency"
+          ]
+        },
+        "vat": {
+          "type": "boolean"
+        },
+        "urgent": {
+          "type": "boolean"
+        },
+        "payerIban": {
+          "type": "string"
+        },
+        "payerAccountId": {
+          "type": "null"
+        },
+        "transferReferenceId": {
+          "type": "null"
+        },
+        "documentId": {
+          "type": "string"
+        },
+        "associatedField": {
+          "type": "object",
+          "properties": {
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "signatureNoCommission": {
+                  "type": "string"
+                },
+                "paymentPurpose": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "signatureNoCommission",
+                "paymentPurpose"
+              ]
+            }
+          },
+          "required": [
+            "parameters"
+          ]
+        },
+        "conversionPurpose": {
+          "type": "null"
+        },
+        "foreignPaymentDetails": {
+          "type": "null"
+        },
+        "exchangeRate": {
+          "type": "null"
+        },
+        "fxContractId": {
+          "type": "null"
+        },
+        "fxContractRecipientId": {
+          "type": "null"
+        },
+        "fxContract": {
+          "type": "null"
+        },
+        "fxContracts": {
+          "type": "null"
+        },
+        "factualSender": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "iinOrBin": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "iinOrBin"
+          ]
+        }
+      },
+      "required": [
+        "createDate",
+        "issueDate",
+        "valueDate",
+        "knp",
+        "kbk",
+        "description",
+        "paymentAmount",
+        "commission",
+        "vat",
+        "urgent",
+        "payerIban",
+        "payerAccountId",
+        "transferReferenceId",
+        "documentId",
+        "associatedField",
+        "conversionPurpose",
+        "foreignPaymentDetails",
+        "exchangeRate",
+        "fxContractId",
+        "fxContractRecipientId",
+        "fxContract",
+        "fxContracts",
+        "factualSender"
+      ]
+    },
+    "colvirId": {
+      "type": "null"
+    },
+    "imported": {
+      "type": "boolean"
+    },
+    "signatureScheme": {
+      "type": "string"
+    },
+    "signatures": {
+      "type": "null"
+    },
+    "userCanSignCustomSignature": {
+      "type": "boolean"
+    },
+    "paymentEmployees": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "iban": {
+              "type": "null"
+            },
+            "lastname": {
+              "type": "string"
+            },
+            "firstname": {
+              "type": "string"
+            },
+            "middlename": {
+              "type": "string"
+            },
+            "iin": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "object",
+              "properties": {
+                "amount": {
+                  "type": "integer"
+                },
+                "currency": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "amount",
+                "currency"
+              ]
+            },
+            "period": {
+              "type": "string"
+            },
+            "birthDate": {
+              "type": "string"
+            },
+            "accessory": {
+              "type": "null"
+            },
+            "numberInDoc": {
+              "type": "null"
+            },
+            "kbe": {
+              "type": "null"
+            },
+            "countryCode": {
+              "type": "null"
+            },
+            "extra": {
+              "type": "object",
+              "properties": {
+                "map": {
+                  "type": "object",
+                  "properties": {
+                    "iinChecked": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "iinChecked"
+                  ]
+                }
+              },
+              "required": [
+                "map"
+              ]
+            }
+          },
+          "required": [
+            "iban",
+            "lastname",
+            "firstname",
+            "middlename",
+            "iin",
+            "amount",
+            "period",
+            "birthDate",
+            "accessory",
+            "numberInDoc",
+            "kbe",
+            "countryCode",
+            "extra"
+          ]
+        }
+      ]
+    },
+    "emailOnSuccess": {
+      "type": "null"
+    },
+    "checksumId": {
+      "type": "null"
+    }
+  },
+  "required": [
+    "id",
+    "companyId",
+    "company",
+    "requestId",
+    "status",
+    "category",
+    "type",
+    "paymentRecipient",
+    "details",
+    "colvirId",
+    "imported",
+    "signatureScheme",
+    "signatures",
+    "userCanSignCustomSignature",
+    "paymentEmployees",
+    "emailOnSuccess",
+    "checksumId"
+  ]
+}

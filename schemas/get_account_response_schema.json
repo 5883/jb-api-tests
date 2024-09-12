@@ -1,0 +1,875 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "iban": {
+          "type": "string"
+        },
+        "accountType": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "blockType": {
+          "type": "string"
+        },
+        "ekoLockType": {
+          "type": "null"
+        },
+        "balance": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "number"
+            },
+            "currency": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "amount",
+            "currency"
+          ]
+        },
+        "companyId": {
+          "type": "string"
+        },
+        "created": {
+          "type": "string"
+        },
+        "openDate": {
+          "type": "string"
+        },
+        "irreducibleBalance": {
+          "type": "integer"
+        },
+        "alterCode": {
+          "type": "null"
+        },
+        "hasFailedMigrations": {
+          "type": "null"
+        },
+        "depositType": {
+          "type": "null"
+        },
+        "additionalDetails": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "id",
+        "iban",
+        "accountType",
+        "status",
+        "blockType",
+        "ekoLockType",
+        "balance",
+        "companyId",
+        "created",
+        "openDate",
+        "irreducibleBalance",
+        "alterCode",
+        "hasFailedMigrations",
+        "depositType",
+        "additionalDetails"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "iban": {
+          "type": "string"
+        },
+        "accountType": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "blockType": {
+          "type": "string"
+        },
+        "ekoLockType": {
+          "type": "null"
+        },
+        "balance": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "number"
+            },
+            "currency": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "amount",
+            "currency"
+          ]
+        },
+        "companyId": {
+          "type": "string"
+        },
+        "created": {
+          "type": "string"
+        },
+        "openDate": {
+          "type": "string"
+        },
+        "irreducibleBalance": {
+          "type": "integer"
+        },
+        "alterCode": {
+          "type": "null"
+        },
+        "hasFailedMigrations": {
+          "type": "null"
+        },
+        "depositType": {
+          "type": "null"
+        },
+        "additionalDetails": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "id",
+        "iban",
+        "accountType",
+        "status",
+        "blockType",
+        "ekoLockType",
+        "balance",
+        "companyId",
+        "created",
+        "openDate",
+        "irreducibleBalance",
+        "alterCode",
+        "hasFailedMigrations",
+        "depositType",
+        "additionalDetails"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "iban": {
+          "type": "string"
+        },
+        "accountType": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "blockType": {
+          "type": "string"
+        },
+        "ekoLockType": {
+          "type": "null"
+        },
+        "balance": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "number"
+            },
+            "currency": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "amount",
+            "currency"
+          ]
+        },
+        "companyId": {
+          "type": "string"
+        },
+        "created": {
+          "type": "string"
+        },
+        "openDate": {
+          "type": "string"
+        },
+        "irreducibleBalance": {
+          "type": "integer"
+        },
+        "alterCode": {
+          "type": "null"
+        },
+        "hasFailedMigrations": {
+          "type": "null"
+        },
+        "depositType": {
+          "type": "null"
+        },
+        "additionalDetails": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "id",
+        "iban",
+        "accountType",
+        "status",
+        "blockType",
+        "ekoLockType",
+        "balance",
+        "companyId",
+        "created",
+        "openDate",
+        "irreducibleBalance",
+        "alterCode",
+        "hasFailedMigrations",
+        "depositType",
+        "additionalDetails"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "iban": {
+          "type": "string"
+        },
+        "accountType": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "blockType": {
+          "type": "string"
+        },
+        "ekoLockType": {
+          "type": "null"
+        },
+        "balance": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "number"
+            },
+            "currency": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "amount",
+            "currency"
+          ]
+        },
+        "companyId": {
+          "type": "string"
+        },
+        "created": {
+          "type": "string"
+        },
+        "openDate": {
+          "type": "string"
+        },
+        "irreducibleBalance": {
+          "type": "integer"
+        },
+        "alterCode": {
+          "type": "null"
+        },
+        "hasFailedMigrations": {
+          "type": "null"
+        },
+        "depositType": {
+          "type": "null"
+        },
+        "additionalDetails": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "id",
+        "iban",
+        "accountType",
+        "status",
+        "blockType",
+        "ekoLockType",
+        "balance",
+        "companyId",
+        "created",
+        "openDate",
+        "irreducibleBalance",
+        "alterCode",
+        "hasFailedMigrations",
+        "depositType",
+        "additionalDetails"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "iban": {
+          "type": "string"
+        },
+        "accountType": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "blockType": {
+          "type": "string"
+        },
+        "ekoLockType": {
+          "type": "null"
+        },
+        "balance": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "number"
+            },
+            "currency": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "amount",
+            "currency"
+          ]
+        },
+        "companyId": {
+          "type": "string"
+        },
+        "created": {
+          "type": "string"
+        },
+        "openDate": {
+          "type": "string"
+        },
+        "irreducibleBalance": {
+          "type": "integer"
+        },
+        "alterCode": {
+          "type": "null"
+        },
+        "hasFailedMigrations": {
+          "type": "null"
+        },
+        "depositType": {
+          "type": "null"
+        },
+        "additionalDetails": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "id",
+        "iban",
+        "accountType",
+        "status",
+        "blockType",
+        "ekoLockType",
+        "balance",
+        "companyId",
+        "created",
+        "openDate",
+        "irreducibleBalance",
+        "alterCode",
+        "hasFailedMigrations",
+        "depositType",
+        "additionalDetails"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "iban": {
+          "type": "string"
+        },
+        "accountType": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "blockType": {
+          "type": "string"
+        },
+        "ekoLockType": {
+          "type": "null"
+        },
+        "balance": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "number"
+            },
+            "currency": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "amount",
+            "currency"
+          ]
+        },
+        "companyId": {
+          "type": "string"
+        },
+        "created": {
+          "type": "string"
+        },
+        "openDate": {
+          "type": "string"
+        },
+        "irreducibleBalance": {
+          "type": "integer"
+        },
+        "alterCode": {
+          "type": "null"
+        },
+        "hasFailedMigrations": {
+          "type": "null"
+        },
+        "depositType": {
+          "type": "null"
+        },
+        "additionalDetails": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "id",
+        "iban",
+        "accountType",
+        "status",
+        "blockType",
+        "ekoLockType",
+        "balance",
+        "companyId",
+        "created",
+        "openDate",
+        "irreducibleBalance",
+        "alterCode",
+        "hasFailedMigrations",
+        "depositType",
+        "additionalDetails"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "iban": {
+          "type": "string"
+        },
+        "accountType": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "blockType": {
+          "type": "string"
+        },
+        "ekoLockType": {
+          "type": "null"
+        },
+        "balance": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "number"
+            },
+            "currency": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "amount",
+            "currency"
+          ]
+        },
+        "companyId": {
+          "type": "string"
+        },
+        "created": {
+          "type": "string"
+        },
+        "openDate": {
+          "type": "string"
+        },
+        "irreducibleBalance": {
+          "type": "integer"
+        },
+        "alterCode": {
+          "type": "null"
+        },
+        "hasFailedMigrations": {
+          "type": "null"
+        },
+        "depositType": {
+          "type": "null"
+        },
+        "additionalDetails": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "id",
+        "iban",
+        "accountType",
+        "status",
+        "blockType",
+        "ekoLockType",
+        "balance",
+        "companyId",
+        "created",
+        "openDate",
+        "irreducibleBalance",
+        "alterCode",
+        "hasFailedMigrations",
+        "depositType",
+        "additionalDetails"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "iban": {
+          "type": "string"
+        },
+        "accountType": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "blockType": {
+          "type": "string"
+        },
+        "ekoLockType": {
+          "type": "null"
+        },
+        "balance": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "number"
+            },
+            "currency": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "amount",
+            "currency"
+          ]
+        },
+        "companyId": {
+          "type": "string"
+        },
+        "created": {
+          "type": "string"
+        },
+        "openDate": {
+          "type": "string"
+        },
+        "irreducibleBalance": {
+          "type": "integer"
+        },
+        "alterCode": {
+          "type": "null"
+        },
+        "hasFailedMigrations": {
+          "type": "null"
+        },
+        "depositType": {
+          "type": "null"
+        },
+        "additionalDetails": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "id",
+        "iban",
+        "accountType",
+        "status",
+        "blockType",
+        "ekoLockType",
+        "balance",
+        "companyId",
+        "created",
+        "openDate",
+        "irreducibleBalance",
+        "alterCode",
+        "hasFailedMigrations",
+        "depositType",
+        "additionalDetails"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "iban": {
+          "type": "string"
+        },
+        "accountType": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "blockType": {
+          "type": "string"
+        },
+        "ekoLockType": {
+          "type": "null"
+        },
+        "balance": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "number"
+            },
+            "currency": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "amount",
+            "currency"
+          ]
+        },
+        "companyId": {
+          "type": "string"
+        },
+        "created": {
+          "type": "string"
+        },
+        "openDate": {
+          "type": "string"
+        },
+        "irreducibleBalance": {
+          "type": "integer"
+        },
+        "alterCode": {
+          "type": "null"
+        },
+        "hasFailedMigrations": {
+          "type": "null"
+        },
+        "depositType": {
+          "type": "null"
+        },
+        "additionalDetails": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "id",
+        "iban",
+        "accountType",
+        "status",
+        "blockType",
+        "ekoLockType",
+        "balance",
+        "companyId",
+        "created",
+        "openDate",
+        "irreducibleBalance",
+        "alterCode",
+        "hasFailedMigrations",
+        "depositType",
+        "additionalDetails"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "iban": {
+          "type": "string"
+        },
+        "accountType": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "blockType": {
+          "type": "string"
+        },
+        "ekoLockType": {
+          "type": "null"
+        },
+        "balance": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "number"
+            },
+            "currency": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "amount",
+            "currency"
+          ]
+        },
+        "companyId": {
+          "type": "string"
+        },
+        "created": {
+          "type": "string"
+        },
+        "openDate": {
+          "type": "string"
+        },
+        "irreducibleBalance": {
+          "type": "integer"
+        },
+        "alterCode": {
+          "type": "null"
+        },
+        "hasFailedMigrations": {
+          "type": "null"
+        },
+        "depositType": {
+          "type": "null"
+        },
+        "additionalDetails": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "id",
+        "iban",
+        "accountType",
+        "status",
+        "blockType",
+        "ekoLockType",
+        "balance",
+        "companyId",
+        "created",
+        "openDate",
+        "irreducibleBalance",
+        "alterCode",
+        "hasFailedMigrations",
+        "depositType",
+        "additionalDetails"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "iban": {
+          "type": "string"
+        },
+        "accountType": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "blockType": {
+          "type": "string"
+        },
+        "ekoLockType": {
+          "type": "null"
+        },
+        "balance": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "number"
+            },
+            "currency": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "amount",
+            "currency"
+          ]
+        },
+        "companyId": {
+          "type": "string"
+        },
+        "created": {
+          "type": "string"
+        },
+        "openDate": {
+          "type": "string"
+        },
+        "irreducibleBalance": {
+          "type": "integer"
+        },
+        "alterCode": {
+          "type": "null"
+        },
+        "hasFailedMigrations": {
+          "type": "null"
+        },
+        "depositType": {
+          "type": "null"
+        },
+        "additionalDetails": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "id",
+        "iban",
+        "accountType",
+        "status",
+        "blockType",
+        "ekoLockType",
+        "balance",
+        "companyId",
+        "created",
+        "openDate",
+        "irreducibleBalance",
+        "alterCode",
+        "hasFailedMigrations",
+        "depositType",
+        "additionalDetails"
+      ]
+    }
+  ]
+}
