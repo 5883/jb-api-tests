@@ -26,7 +26,6 @@ class AuthService:
         self._response = requests.post(f'{base_url}/api/v1/oauth/token', headers=self._headers, data=self._data, verify=False)
         self._json = self._response.json()
         self._access_token = self._json.get("access_token")
-        print(f'self._access_token == {self._access_token}')
 
     def _send_sms(self):
         self._headers = {
@@ -45,7 +44,6 @@ class AuthService:
         self._id = self._json.get("id")
         self._signature = self._json.get("signature")
         self._code = self._json.get("code")
-        print(f'self._code == {self._code}')
 
     def _verify_sms_values(self):
         self._url = f'{base_url}/api/v1/auth/phone/token/{self._id}'
@@ -71,7 +69,6 @@ class AuthService:
 
         self._json = self._response.json()
         self._signature = self._json.get("signature")
-        print(f'self._signature in _verify_sms_values == {self._signature}')
 
     def _create_device_token(self):
         self._url = f'{base_url}/api/v1/auth/device/token'
@@ -87,7 +84,6 @@ class AuthService:
         self._response = requests.post(self._url, headers=self._headers, json=self._body, verify=False)
         self._json = self._response.json()
         self._signature = self._json.get("signature")
-        print(f'self._signature == {self._signature}')
 
     def login(self):
         self._create_client_token()
@@ -111,6 +107,5 @@ class AuthService:
         params = {"grant_type": "password"}
 
         self._response = requests.post(self._url, headers=self._headers, data=self._data, params=params, verify=False)
-        print(f'self._response in login == {self._response.json()}')
         return  self._response.json()
 

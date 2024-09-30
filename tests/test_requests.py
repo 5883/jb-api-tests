@@ -1,13 +1,11 @@
 from unittest import skipIf
-from venv import logger
-
 import pytest
 
 import configs
 from base.base_test import BaseTest
 from utils.assert_utils import AssertUtils
 from utils.json_utils import JsonUtils
-from services.payments.payment_service_data import PaymentServiceData
+from data.payment_data import PaymentServiceData
 
 
 @pytest.mark.usefixtures('setup')

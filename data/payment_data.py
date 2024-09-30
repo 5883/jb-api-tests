@@ -1,11 +1,6 @@
-from random import randint
-
 import faker
-from faker.proxy import Faker
-
 
 class PaymentServiceData:
-    faker = Faker()
 
     @staticmethod
     def mshi_payments_data():
@@ -24,7 +19,7 @@ class PaymentServiceData:
                     "code": "012",
                     "name": "Обязательные социальные отчисления"
                 },
-                "description": "ФЫВ. Обязательные социальные отчисления",
+                "description": "api-test-description Обязательные социальные отчисления",
                 "payerIban": "KZ38998BTB0000793638",
                 "paymentAmount": {
                     "amount": 111,

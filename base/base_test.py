@@ -19,7 +19,6 @@ class BaseTest:
 
     @pytest.fixture(scope='class', autouse=True)
     def setup(self, request):
-        print("Запустился метод setup")
         self.assertUtils = AssertUtils()
         auth_service = AuthService()
         login = auth_service.login()
@@ -27,13 +26,10 @@ class BaseTest:
         userAuthorities = JsonUtils.get_value_by_path(login, 'user.userAuthorities')
         userAuth = self.get_user_auth_by_bin(userAuthorities, configs.bin)
 
-        print(f'self.companyID DO == {self.companyID}')
         if self.companyID is None and userAuth is not None:
             self.companyID = userAuth.get('companyId')
-        print(f'self.companyID POSLE == {self.companyID}')
 
         if self.access_token:
-            print(f'access_token == {self.access_token}')
             self.api_client = APIClient(self.access_token)
         else:
             raise Exception("Отсутствует access_token. APIClient не может быть инициализирован.")

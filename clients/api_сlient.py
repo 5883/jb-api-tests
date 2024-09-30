@@ -17,11 +17,8 @@ class APIClient:
         self.session = requests.Session()
 
     def _updated_headers(self):
-        print(f'self._access_token in _updated_headers {self._access_token}')
-        # Копируем заголовки, чтобы не изменять оригинальные
         updated_headers = self.headers.copy()
         updated_headers["Authorization"] = f"Bearer {self._access_token}"
-        print(f'updated_headers == {updated_headers}')
         return updated_headers
 
     def request(self, method, endpoint, data=None, json=None, params=None, status_code=None):
