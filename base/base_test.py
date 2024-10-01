@@ -8,7 +8,7 @@ import configs
 from utils.assert_utils import AssertUtils
 from utils.json_utils import *
 
-
+@pytest.mark.usefixtures("setup")
 class BaseTest:
     access_token = None
     api_client = None

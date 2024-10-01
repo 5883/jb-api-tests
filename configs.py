@@ -1,4 +1,5 @@
 base_url="https://10.155.87.10"
+# base_url="https://business-stream-0.jusan.kz/8460"
 phone_number="+77013132777"
 iin="880823300839"
 password="ASDasd1234!"

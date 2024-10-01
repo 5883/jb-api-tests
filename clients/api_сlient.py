@@ -25,6 +25,7 @@ class APIClient:
         """Общий метод для отправки запросов."""
         url = f"{self.__base_url}{endpoint}"
         response = self.session.request(
+            cert = ('/Users/shingisbaidarkhanov/PycharmProjects/jb-api-tests/utils/certs/02_cert_new.pem', '/Users/shingisbaidarkhanov/PycharmProjects/jb-api-tests/utils/certs/02_privatekey.key'),
             method=method,
             url=url,
             headers=self._updated_headers(),

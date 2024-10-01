@@ -1,5 +1,6 @@
 from unittest import skipIf
 import pytest
+from urllib3 import request
 
 import configs
 from base.base_test import BaseTest

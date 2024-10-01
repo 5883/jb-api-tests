@@ -11,7 +11,7 @@ class Logger:
     logging.basicConfig(
         level=logging.INFO,
         format='%(asctime)s - %(levelname)s - %(message)s',
-        handlers=[logging.StreamHandler()]  # Убедитесь, что вывод направляется в консоль
+        handlers=[logging.StreamHandler()]
     )
 
     @staticmethod
@@ -44,7 +44,6 @@ class Logger:
             except ValueError:
                 logger.info(f"Тело запроса (не JSON): {request.body}")
 
-        # Логируем данные ответа
         logger.info(f"Статус-код ответа: {response.status_code}")
         logger.info(f"Заголовки ответа: {response.headers}")
         try:
