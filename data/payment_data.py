@@ -3,7 +3,7 @@ import faker
 class PaymentServiceData:
 
     @staticmethod
-    def mshi_payments_data():
+    def mshi_payments_data(amount):
         return {
             "category": "DOMESTIC",
             "type": "SOCIAL",
@@ -22,7 +22,7 @@ class PaymentServiceData:
                 "description": "api-test-description Обязательные социальные отчисления",
                 "payerIban": "KZ38998BTB0000793638",
                 "paymentAmount": {
-                    "amount": 111,
+                    "amount": amount,
                     "currency": "KZT"
                 },
                 "commission": {
@@ -40,7 +40,7 @@ class PaymentServiceData:
                 {
                     "amount": {
                         "currency": "KZT",
-                        "amount": 111
+                        "amount": amount
                     },
                     "birthDate": "1991-07-31",
                     "firstname": "Батыр",

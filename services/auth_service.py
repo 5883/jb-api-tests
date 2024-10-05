@@ -1,6 +1,8 @@
 import requests
 
+import configs
 from configs import base_url, phone_number, iin, password
+
 
 class AuthService:
     _access_token = None
@@ -23,7 +25,8 @@ class AuthService:
             "grant_type": "client_credentials"
         }
 
-        self._response = requests.post(f'{base_url}/api/v1/oauth/token', headers=self._headers, data=self._data, verify=False)
+        self._response = requests.post(f'{base_url}/api/v1/oauth/token', headers=self._headers, data=self._data,
+                                       cert=(configs.cert, configs.key), verify=False)
         self._json = self._response.json()
         self._access_token = self._json.get("access_token")
 
@@ -39,7 +42,8 @@ class AuthService:
             "phone": phone_number
         }
 
-        self._response = requests.post(f'{base_url}/api/v1/auth/phone/token', headers=self._headers, json=self._body, verify=False)
+        self._response = requests.post(f'{base_url}/api/v1/auth/phone/token', headers=self._headers,
+                                       cert=(configs.cert, configs.key), json=self._body, verify=False)
         self._json = self._response.json()
         self._id = self._json.get("id")
         self._signature = self._json.get("signature")
@@ -64,6 +68,7 @@ class AuthService:
             self._url,
             headers=self._headers,
             json=self._body,
+            cert=(configs.cert, configs.key),
             verify=False
         )
 
@@ -81,7 +86,8 @@ class AuthService:
 
         self._body = {"phone": phone_number}
 
-        self._response = requests.post(self._url, headers=self._headers, json=self._body, verify=False)
+        self._response = requests.post(self._url, headers=self._headers, json=self._body,
+                                       cert=(configs.cert, configs.key), verify=False)
         self._json = self._response.json()
         self._signature = self._json.get("signature")
 
@@ -106,6 +112,6 @@ class AuthService:
 
         params = {"grant_type": "password"}
 
-        self._response = requests.post(self._url, headers=self._headers, data=self._data, params=params, verify=False)
-        return  self._response.json()
-
+        self._response = requests.post(self._url, headers=self._headers, data=self._data, params=params,
+                                       cert=(configs.cert, configs.key), verify=False)
+        return self._response.json()

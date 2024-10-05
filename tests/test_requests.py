@@ -17,10 +17,11 @@ class TestAccount(BaseTest):
         self.responseBody = self.api_client.get(f'/api/v1/companies/{self.companyID}/accounts')
         JsonUtils.validate_json_schema(self.responseBody, "get_account_response_schema.json")
 
-    def test_post_request(self):
+    @pytest.mark.parametrize("amount", [1, 2, 3])
+    def test_post_request(self, amount):
         self.responseBody = self.api_client.post(
             endpoint=f'/api/v1/companies/{self.companyID}/payments',
-            json=PaymentServiceData.mshi_payments_data()
+            json=PaymentServiceData.mshi_payments_data(amount)
         )
         JsonUtils.validate_json_schema(self.responseBody, "create_domestic_payment_response.json")
         self.payment_id = JsonUtils.get_value_by_path(self.responseBody, 'id')
