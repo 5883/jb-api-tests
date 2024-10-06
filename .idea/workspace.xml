@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11d935a7-e96a-433d-b036-f239b0fd33d2" name="Changes" comment="add cert">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/api_сlient.py" beforeDir="false" afterPath="$PROJECT_DIR$/clients/api_сlient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/configs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/payment_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/payment_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_4_test.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_requests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_requests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,12 +56,13 @@
     "Python.test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/shingisbaidarkhanov/PycharmProjects/jb-api-tests/utils/certs",
+    "last_opened_file_path": "/Users/shingisbaidarkhanov/PycharmProjects/jb-api-tests",
     "settings.editor.selected.configurable": "Errors"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/utils/certs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -74,7 +71,7 @@
       <recent name="$PROJECT_DIR$/clients" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_requests.TestAccount.test_post_request">
+  <component name="RunManager" selected="Python tests.Python tests for test_requests.TestAccount.test_delete_request">
     <configuration name="Python tests for test_4_test.TestClass.test_run" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="jb-api-tests" />
       <option name="ENV_FILES" value="" />
@@ -90,7 +87,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_requests.TestAccount" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_requests.TestAccount.test_delete_request" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="jb-api-tests" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -101,7 +98,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_requests.TestAccount&quot;" />
+      <option name="_new_target" value="&quot;test_requests.TestAccount.test_delete_request&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -167,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_requests.TestAccount.test_delete_request" />
         <item itemvalue="Python tests.Python tests for test_requests.TestAccount.test_post_request" />
         <item itemvalue="Python tests.Python tests for test_requests.TestAccount.test_get_request" />
         <item itemvalue="Python tests.Python tests for test_4_test.TestClass.test_run" />
         <item itemvalue="Python tests.Python tests for test_requests.TestAccount.test_request_with_cert" />
-        <item itemvalue="Python tests.Python tests for test_requests.TestAccount" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +220,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727767267568</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add cert">
+      <option name="closed" value="true" />
+      <created>1728131762046</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728131762046</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnknownFeatures">

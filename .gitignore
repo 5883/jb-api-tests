@@ -1,3 +1,5 @@
 .venv
 .env
 .configs.py
+/s-tr.sh
+/output/
