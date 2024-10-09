@@ -3,3 +3,5 @@
 .configs.py
 /s-tr.sh
 /output/
+/junit-results/
+/report.xml
