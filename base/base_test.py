@@ -2,7 +2,7 @@ from socket import send_fds
 
 import pytest
 import pydash
-from clients.api_сlient import APIClient
+from client.api_сlient import APIClient
 from services.auth_service import AuthService
 import configs
 from utils.assert_utils import AssertUtils
@@ -13,13 +13,13 @@ class BaseTest:
     access_token = None
     api_client = None
     companyID = None
-    assertUtils = None
-    responseBody = None
+    assert_utils = None
+    response_body = None
     payment_id = None
 
     @pytest.fixture(scope='class', autouse=True)
     def setup(self, request):
-        self.assertUtils = AssertUtils()
+        self.assert_utils = AssertUtils()
         auth_service = AuthService()
         login = auth_service.login()
         self.access_token = login.get("access_token")
@@ -38,7 +38,7 @@ class BaseTest:
         request.cls.access_token = self.access_token
         request.cls.api_client = self.api_client
         request.cls.companyID = self.companyID
-        request.cls.assertUtils = self.assertUtils
+        request.cls.assert_utils = self.assert_utils
 
     def get_access_token(self):
         return self.access_token

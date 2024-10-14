@@ -1,6 +1,5 @@
 import argparse
 import os
-import re
 import json
 import importlib
 import ensurepip
@@ -39,7 +38,7 @@ if not xmlFiles:
     print("Файл не загружен")
     exit(1)
 
-apiUrl = f'https://api.zephyrscale.smartbear.com/v2/automations/executions/junit?projectKey={args.project}&autoCreateTestCases=true'
+apiUrl = f'https://api.zephyrscale.smartbear.com/v2/automations/executions/junit?projectKey={args.project}&autoCreateTestCases={args.auto}'
 
 headers = {'Authorization': f'Bearer {args.token}'}
 
