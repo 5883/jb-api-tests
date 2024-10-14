@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11d935a7-e96a-433d-b036-f239b0fd33d2" name="Changes" comment="add zephyr reporter">
-      <change afterPath="$PROJECT_DIR$/client/error/api_client_error.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/error/auth_error.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/error/not_found_error.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schemas/create_internal_payment_response.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="11d935a7-e96a-433d-b036-f239b0fd33d2" name="Changes" comment="correct reporter and client">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/base_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/base_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/api_сlient.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/api_сlient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/payment_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/payment_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_requests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_requests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/reporter/zephyr_uploader.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/reporter/zephyr_uploader.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728468382038</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="correct reporter and client">
+      <option name="closed" value="true" />
+      <created>1728901938737</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728901938737</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -265,6 +262,7 @@
     <MESSAGE value="add cert" />
     <MESSAGE value="add examples" />
     <MESSAGE value="add zephyr reporter" />
-    <option name="LAST_COMMIT_MESSAGE" value="add zephyr reporter" />
+    <MESSAGE value="correct reporter and client" />
+    <option name="LAST_COMMIT_MESSAGE" value="correct reporter and client" />
   </component>
 </project>
